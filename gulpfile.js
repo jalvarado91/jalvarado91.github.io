@@ -21,5 +21,5 @@ gulp.task('serve', ['styles'], function() {
 		}
 	});
 
-	gulp.watch('app/scss/.*scss', ['sass']);
+	gulp.watch('./scss/.*scss', ['sass']);
 });
