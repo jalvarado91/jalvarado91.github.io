@@ -5,12 +5,13 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 gulp.task('styles', function() {
-	gulp.src('./scss/styles.scss')
+	return gulp.src('./scss/styles.scss')
 		.pipe(sass())
 		.pipe(autoprefixer({
 			browsers: ['last 2 version']
 		}))
-		.pipe(gulp.dest('./css'));
+		.pipe(gulp.dest('./css'))
+		.pipe(reload({ stream: true }));
 });
 
 
@@ -21,5 +22,5 @@ gulp.task('serve', ['styles'], function() {
 		}
 	});
 
-	gulp.watch('./scss/.*scss', ['sass']);
+	gulp.watch('./scss/*.scss', ['styles']);
 });
