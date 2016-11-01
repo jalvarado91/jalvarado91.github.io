@@ -239,7 +239,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -385,8 +386,7 @@ body {
     z-index: 1;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); }
     .overlay .info-wrap .image-wrap {
       display: inline-block;
       width: 180px;
@@ -417,28 +417,23 @@ body {
         .overlay .info-wrap .profile a.goidx-link {
           font-weight: 700; }
     .overlay .info-wrap .links {
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
       .overlay .info-wrap .links a {
         display: inline-block;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
         margin: 0 16px;
-        transition: all 0.2s; }
+        transition: all .2s; }
         .overlay .info-wrap .links a [class^="icon"] {
           display: block;
-          transition: all 0.2s;
+          transition: all .2s;
           width: 35px;
           height: 35px;
           fill: white; }
