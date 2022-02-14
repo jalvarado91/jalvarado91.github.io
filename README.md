@@ -1,3 +1,3 @@
 # Personal Site
 
-jalvarado91.github.io / juanalvarado.me
+jalvarado91.github.io / jalvarado.dev
